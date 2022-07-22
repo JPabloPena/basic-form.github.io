@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>CodeBulls Task</title>
+    <script>
+        function getData() {
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let phone = document.getElementById('phone').value;
+
+            document.getElementById('name1').innerHTML = name;
+            document.getElementById('email1').innerHTML = email;
+            document.getElementById('phone1').innerHTML = phone;
+        }
+    </script>
+</head>
+<body>
+    <div class="form-register">
+        <form id="myForm" name="register" method="post">
+            <label for="name">Name</label>
+            <input class="controls" type="text" id="name" autocomplete="off">
+
+            <label for="email">E-mail</label>
+            <input class="controls" type="email" id="email" autocomplete="off">
+
+            <label for="phone">Phone</label>
+            <input class="controls" type="text" id="phone" autocomplete="off">
+
+            <input class="btn" type="button" name="btn-1" value="Send" onclick="getData();">
+        </form>
+
+        <p><b>Name:</b> <span id="name1"></span></p>
+        <p><b>Email:</b> <span id="email1"></span></p>
+        <p><b>Phone:</b> <span id="phone1"></span></p>
+    </div>
+</body>
+</html>
